@@ -6,9 +6,13 @@ let header = require('gulp-header');
 let footer = require('gulp-footer');
 let flatten = require('gulp-flatten');
 
+let getRndInteger = (min, max) => {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
 let buildSvg = () => {
     return gulp
-        .src('./input/instagram.svg')
+        .src('./input/mail-plane.svg')
         .pipe(
             svgmin({
                 plugins: [
@@ -19,8 +23,7 @@ let buildSvg = () => {
                         cleanupIDs: {
                             prefix: {
                                 toString() {
-                                    this.counter = this.counter || 0;
-                                    return `id-${this.counter++}`;
+                                    return `id-${getRndInteger(100, 100000)}`;
                                 }
                             }
                         }
