@@ -12,7 +12,7 @@ let getRndInteger = (min, max) => {
 
 let buildSvg = () => {
     return gulp
-        .src('./input/mail-plane.svg')
+        .src('./input/instagram.svg')
         .pipe(
             svgmin({
                 plugins: [
