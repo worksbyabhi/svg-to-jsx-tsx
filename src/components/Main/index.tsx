@@ -93,17 +93,19 @@ export const MainComponent = () => {
           <textarea id="converted-svg" value={convertedJsx} />
         </div>
         <div className="rightContentPreview">
-          <button
-            className="downloadButton"
-            onClick={() =>
-              fileDownloadHandler(
-                convertedJsx,
-                `${userConfig.componentName}.tsx`
-              )
-            }
-          >
-            Download
-          </button>
+          {!!convertedJsx && (
+            <button
+              className="downloadButton"
+              onClick={() =>
+                fileDownloadHandler(
+                  convertedJsx,
+                  `${userConfig.componentName}.tsx`
+                )
+              }
+            >
+              Download
+            </button>
+          )}
           <div className="convertedPreview" ref={convertedPreviewRef}></div>
         </div>
       </div>
