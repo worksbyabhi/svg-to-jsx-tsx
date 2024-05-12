@@ -1,0 +1,87 @@
+@import "../../assets/common-style.scss";
+
+.svg2js-main-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+
+  .contentContainer {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 1rem;
+
+    .leftContent,
+    .leftContentPreview,
+    .rightContent,
+    .rightContentPreview {
+      display: flex;
+      width: 50%;
+      flex-shrink: 0;
+      flex-direction: column;
+    }
+
+    .leftContent {
+      textarea {
+        flex-grow: 1;
+        height: 360px;
+      }
+    }
+
+    .leftContentPreview {
+      textarea {
+        flex-grow: 1;
+        height: 280px;
+      }
+    }
+
+    .rightContent {
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: end;
+
+      .userInput {
+        label {
+          width: 160px;
+          margin-right: 1rem;
+          display: inline-block;
+        }
+
+        input {
+          width: 200px;
+          height: 40px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .rightContentPreview {
+      justify-content: start;
+      gap: 1rem;
+
+      .downloadButton {
+        margin-top: 1.5rem;
+      }
+    }
+
+    .rightContent,
+    .rightContentPreview {
+      button {
+        border: none;
+        color: $body-background-color;
+        background: $linear-gradient-primary;
+        height: 44px;
+        padding-left: 0 1rem;
+        font-size: 20px;
+        width: 280px;
+      }
+    }
+
+    .userInputPreview {
+      height: 150px;
+      flex-shrink: 0;
+      overflow: auto;
+    }
+  }
+}

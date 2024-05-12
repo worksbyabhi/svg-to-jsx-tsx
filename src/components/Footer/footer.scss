@@ -1,0 +1,87 @@
+@import "../../assets/common-style.scss";
+
+footer {
+  color: #eee;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  text-align: center;
+  background: linear-gradient($linear-gradient-primary 95%, $linear-gradient-secondary);
+  margin-top: -5px;
+
+  .footer-quote {
+    font-family: "Josefin Sans", sans-serif, Arial;
+    font-size: 30px;
+    font-weight: 300i;
+    font-style: italic;
+    margin-bottom: 5px;
+    margin-right: 0;
+    color: $font-color-secondary;
+    font-weight: bold;
+
+    @media only screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+
+  .footer-cog {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+
+    svg {
+      width: 20px;
+      animation: rotate-snow 2s infinite linear;
+    }
+
+    @keyframes rotate-snow {
+      0% {
+        transform: rotateZ(0);
+      }
+
+      100% {
+        transform: rotateZ(360deg);
+      }
+    }
+  }
+
+  .footer-cog:after,
+  .footer-cog:before {
+    display: inline-block;
+    height: 2px;
+    content: " ";
+    width: 25%;
+    margin: 0 5px;
+    vertical-align: super;
+  }
+
+  .footer-cog:before {
+    background: linear-gradient(90deg, $linear-gradient-primary, $linear-gradient-secondary);
+  }
+  
+  .footer-cog:after {
+    background: linear-gradient(90deg, $linear-gradient-secondary, $linear-gradient-primary);
+  }
+
+  .copyright {
+    padding-bottom: 5px;
+    font-size: 12px;
+
+    a {
+      color: white;
+      letter-spacing: 2px;
+    }
+  }
+
+  .copyright a:hover {
+    color: $body-background-color;
+  }
+
+  .footer-quote, .footer-cog, .copyright {
+    margin-left: 6rem;
+
+    @media only screen and (max-width: 480px) {
+      margin-left: 4rem;
+    }
+  }
+}

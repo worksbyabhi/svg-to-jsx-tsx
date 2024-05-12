@@ -1,0 +1,66 @@
+@import "../assets/fonts/josefin-and-lato.css";
+@import "../assets/common-style.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif, Arial;
+  font-size: 20px;
+  color: $font-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../assets/images/grainyBackground.jpg");
+  background-repeat: repeat;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+header,
+section {
+  margin-left: 4rem;
+  margin-right: 4rem;
+
+  @media only screen and (max-width: 480px) {
+    margin-left: 4rem;
+  }
+
+  .title {
+    text-align: center;
+    margin-top: 1em;
+    color: #5728a3;
+    font-family: "Josefin Sans", sans-serif, Arial;
+    font-weight: 300;
+    font-size: 2em;
+
+    &::after {
+      display: block;
+      height: 2px;
+      background-color: $linear-gradient-secondary;
+      content: " ";
+      width: 80px;
+      text-align: center;
+      margin: 0px auto 10px;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif, Arial;
+  text-align: center;
+  margin-top: 2rem;
+}

@@ -1,0 +1,21 @@
+$body-background-color: #f9f9f9;
+$linear-gradient-primary: #22244a;
+$linear-gradient-secondary: #5728a3;
+$font-primary: #2d2d2d;
+$font-color-secondary: #950740;
+
+.section-top-spacing-placeholder {
+  padding: 3rem;
+
+  @media only screen and (max-width: 480px) {
+    padding: 1.5rem;
+  }
+}
+
+.section-top-half-spacing-placeholder {
+  padding: 1rem;
+
+  @media only screen and (max-width: 480px) {
+    padding: 1rem;
+  }
+}
