@@ -1,6 +1,6 @@
 {
-  "name": "svg2js",
-  "version": "0.1.0",
+  "name": "svg-to-jsx-tsx",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

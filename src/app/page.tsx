@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div className={style.svg2JsApp}>
-      <h1 ref={headerTitleRef}>Svg 2 Js</h1>
+      <h1 ref={headerTitleRef}>SVG to JSX/TSX</h1>
       <MainComponent />
       <Footer />
     </div>

@@ -19,7 +19,7 @@ body {
   color: $font-primary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../assets/images/grainyBackground.jpg");
+  background: $body-background-color;
   background-repeat: repeat;
   font-weight: 400;
   text-rendering: optimizeLegibility;

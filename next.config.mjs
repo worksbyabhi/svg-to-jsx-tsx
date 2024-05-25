@@ -7,6 +7,7 @@ const nextConfig = {
     };
     return config;
   },
+  basePath: "/svg-to-jsx-tsx",
 };
 
 export default nextConfig;

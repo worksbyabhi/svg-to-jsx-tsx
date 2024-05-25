@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.scss";
 
 export const metadata: Metadata = {
-  title: "Svg2Js",
-  description: "This tool converts SVG into reusable React JSX components.",
+  title: "SVG to JSX/TSX Converter",
+  description:
+    "Convert SVG files to JSX/TSX for use with React and React-based frameworks.",
 };
 
 export default function RootLayout({
