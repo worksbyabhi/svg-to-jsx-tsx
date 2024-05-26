@@ -6,7 +6,7 @@ Convert SVG files to JSX/TSX for use with React and React-based frameworks.
   <a href="https://worksbyabhi.github.io/svg-to-jsx-tsx/"><strong>See it in Action »</strong></a>
   <br>
   <br>
-  :star: <span >If you find svg2js useful, please consider giving a star on GitHub!</span>
+  :star: <span >If you find this project useful, please consider giving a star on GitHub!</span>
   <br>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
