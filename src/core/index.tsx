@@ -3,7 +3,7 @@ import "./main.scss";
 import { convertToJSX } from "./convertToJSX";
 import { fileDownloadHandler } from "./fileDownloadHandler";
 
-export const MainComponent = () => {
+export const CoreComponent = () => {
   const userInputPreviewRef = useRef<HTMLDivElement>(null);
   const convertedPreviewRef = useRef<HTMLDivElement>(null);
   const [svgtring, setSvgString] = useState("");
