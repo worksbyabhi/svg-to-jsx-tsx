@@ -57,4 +57,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Acknowledgments
 
 - Utilizes [SVGO](https://github.com/svg/svgo) for SVG optimization.
-- Inspired by similar tools and projects that simplify web development.
+- Inspired by tools and projects that simplify web development.
