@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+import Footer from "@/components/Footer";
+import { HeaderComponent } from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "SVG to JSX/TSX Converter",
@@ -14,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <HeaderComponent />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

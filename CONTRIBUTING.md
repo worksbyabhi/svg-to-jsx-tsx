@@ -33,7 +33,7 @@ npm run dev
 4. Access the project:
 
 ```
-http://localhost:3000/svg-to-jsx-tsx
+http://localhost:3000
 ```
 
 ### Code Changes and Commits

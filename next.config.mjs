@@ -7,7 +7,7 @@ const nextConfig = {
     };
     return config;
   },
-  basePath: "/svg-to-jsx-tsx",
+  basePath: process.env.NODE_ENV === "development" ? "" : "/svg-to-jsx-tsx",
 };
 
 export default nextConfig;

@@ -11,6 +11,7 @@ export interface SVGConfig {
   height: string;
   width: string;
   componentName: string;
+  ariaHidden: boolean;
 }
 
 export const convertToJSX = async (svgString: string, svgConfig: SVGConfig) => {
@@ -31,6 +32,7 @@ export const convertToJSX = async (svgString: string, svgConfig: SVGConfig) => {
     });
     optimizedSvg = optimizeSvg.data;
   } catch (err) {
+    console.log(err);
     optimizedSvg = "";
   }
 
@@ -40,6 +42,9 @@ export const convertToJSX = async (svgString: string, svgConfig: SVGConfig) => {
   if (SVGElement) {
     SVGElement.setAttribute("height", height);
     SVGElement.setAttribute("width", width);
+    if (svgConfig.ariaHidden) {
+      SVGElement.setAttribute("aria-hidden", "true");
+    }
     if (originalSVGAttributeViewBox) {
       SVGElement.setAttribute("viewBox", originalSVGAttributeViewBox);
     }
@@ -48,10 +53,9 @@ export const convertToJSX = async (svgString: string, svgConfig: SVGConfig) => {
 
     const JSXComponentString =
       `import React from 'react';` +
-      `const ${componentName} = () => { return (` +
+      `export const ${componentName} = () => { return (` +
       SVGElementString +
-      `);};` +
-      `export default ${componentName};`;
+      `);};`;
 
     const JSXFormattedComponentString = await prettier.format(
       JSXComponentString,

@@ -12,6 +12,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif, Arial;
@@ -22,11 +24,12 @@ body {
   background: $body-background-color;
   background-repeat: repeat;
   font-weight: 400;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
-header,
 section {
   margin-left: 4rem;
   margin-right: 4rem;
