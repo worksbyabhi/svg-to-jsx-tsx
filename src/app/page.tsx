@@ -13,5 +13,9 @@ export default function Home() {
     }
   }, []);
 
-  return <CoreComponent />;
+  return (
+    <div className={style.svg2JsApp}>
+      <CoreComponent />
+    </div>
+  );
 }
